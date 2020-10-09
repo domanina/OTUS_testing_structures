@@ -1,6 +1,5 @@
 import pytest
 
-
 @pytest.fixture
 def powers():
     new_dict = {}
@@ -8,7 +7,6 @@ def powers():
     for i in range(11):
         new_dict.update({i: pow(i, 2)})
     return new_dict
-
 
 @pytest.fixture
 def reverse(powers):
